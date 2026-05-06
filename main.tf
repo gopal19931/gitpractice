@@ -2,6 +2,11 @@ resource "azurerm_resource_group" "rg"{
   name = "demorg"
   location = "eastus"
 }
+resource "azurerm_resource_group" "rg1" {
+  name = "demorg1"
+  location = "westus"
+  
+}
 
 resource "azurerm_virtual_netowork" "vnet"{
     name="demovnet"
